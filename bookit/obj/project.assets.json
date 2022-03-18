@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET\\bookit\\bookit.csproj",
+      "projectUniqueName": "D:\\Git\\bookit-virtual-library\\bookit\\bookit.csproj",
       "projectName": "bookit",
-      "projectPath": "D:\\.NET\\bookit\\bookit.csproj",
+      "projectPath": "D:\\Git\\bookit-virtual-library\\bookit\\bookit.csproj",
       "packagesPath": "C:\\Users\\ihave\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET\\bookit\\obj\\",
+      "outputPath": "D:\\Git\\bookit-virtual-library\\bookit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ihave\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YwUewVLtvIlyk8ZIhA0DjEsU+aJ+XIp0InaZzy9D8GCY/R0BG2aZrqIff4GFuDMhCSvcXckPzK/NkBqDHkNl5A==",
+  "dgSpecHash": "xEhixzoHZx7UZ+18T51s+5DttiEYwLPi8BykPuJY/6ZwZjp6rIcDFTFc2W9jvQzsmDA8bWAZHnVr0MYlATRfIw==",
   "success": true,
-  "projectFilePath": "D:\\.NET\\bookit\\bookit.csproj",
+  "projectFilePath": "D:\\Git\\bookit-virtual-library\\bookit\\bookit.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
