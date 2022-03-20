@@ -11,7 +11,7 @@ The project is a browser-based application.
 
 - [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet)
 
-- [Database](https://www.sqlite.org/index.html)
+- [Database MSSql](https://www.microsoft.com/pl-pl/sql-server)
 
 - [Documentation](https://www.latex-project.org)
 
