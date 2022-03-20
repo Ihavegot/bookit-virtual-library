@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Git\\bookit-virtual-library\\bookit\\Views\\Data\\Index.cshtml",
+      "TargetPath": "Views\\Data\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Git\\bookit-virtual-library\\bookit\\Views\\Home\\Login.cshtml",
       "TargetPath": "Views\\Home\\Login.cshtml",
       "FileKind": "mvc"
