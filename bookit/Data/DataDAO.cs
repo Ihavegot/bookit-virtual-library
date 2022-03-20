@@ -5,14 +5,14 @@ namespace bookit.Data
 {
     internal class DataDAO
     {
-        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=bookit_db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = @"Data Source=DESKTOP-GS37F69;Initial Catalog=bookitdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public List<DataModel> FetchAll()
         {
             List<DataModel> returnList = new List<DataModel>();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sqlQuery = "SELECT * FROM dbo.mytable";
+                string sqlQuery = "SELECT * FROM dbo.books";
                 SqlCommand cmd = new SqlCommand(sqlQuery, connection);
                 
                 connection.Open();
