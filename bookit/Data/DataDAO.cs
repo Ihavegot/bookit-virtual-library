@@ -33,5 +33,26 @@ namespace bookit.Data
 
             return returnList;
         }
+
+        public int Create(DataModel newData)
+        {
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sqlQuery = "INSERT INTO dbo.books VALUES(@Id, @Title, @Author, @Quantity)";
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+
+                cmd.Parameters.Add("@Id", System.Data.SqlDbType.Int, 100).Value = newData.Id;
+                cmd.Parameters.Add("@Title", System.Data.SqlDbType.VarChar, 100).Value = newData.Title;
+                cmd.Parameters.Add("@Author", System.Data.SqlDbType.VarChar, 100).Value = newData.Author;
+                cmd.Parameters.Add("@Quantity", System.Data.SqlDbType.Int, 100).Value = newData.Quantity;
+
+                connection.Open();
+                int newID = cmd.ExecuteNonQuery();
+                return newID;
+            }
+
+        }
+
     }
 }

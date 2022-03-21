@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Git\bookit-virtual-library\bookit
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Git/bookit-virtual-library/bookit/Views/Data/CreateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxDcmVhdGVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/bookit-virtual-library/bookit/Views/Data/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Git/bookit-virtual-library/bookit/Views/Data/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
