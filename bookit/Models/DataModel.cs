@@ -2,24 +2,24 @@ namespace bookit.Models;
 
 public class DataModel
 {
-    public int Id {get; set;}
-    public string Title {get; set;}
-    public string Author {get; set;}
-    public int Quantity {get; set;}
+    public int id {get; set;}
+    public string title {get; set;}
+    public string author {get; set;}
+    public int quantity {get; set;}
 
     public DataModel()
     {
-        Id = -1;
-        Title = "Empty";
-        Author = "Empty";
-        Quantity = 0;
+        id = -1;
+        title = "Empty";
+        author = "Empty";
+        quantity = 0;
     }
 
     public DataModel(int Id, string Title, string Author, int Quantity)
     {
-        this.Id = Id;
-        this.Title = Title;
-        this.Author = Author;
-        this.Quantity = Quantity;
+        this.id = Id;
+        this.title = Title;
+        this.author = Author;
+        this.quantity = Quantity;
     }
 }

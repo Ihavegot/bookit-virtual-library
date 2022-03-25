@@ -1,1 +1,38 @@
-﻿Details
+﻿@model bookit.Models.DataModel;
+
+@{
+    Layout = "~/Views/Shared/_LayoutData.cshtml";
+}
+
+<h2>
+    Details
+</h2>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantity)
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.title)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.author)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.quantity)
+            </td>
+            <th></th>
+        </tr>
+    </table>
+</div>

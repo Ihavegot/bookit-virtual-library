@@ -9,11 +9,19 @@ public class DataController : Controller
 {
     public IActionResult Index()
     {
-        List<DataModel> data = new List<DataModel>();
+        List<DataModel> dataModel = new List<DataModel>();
         DataDAO datadao = new DataDAO();
-        data = datadao.FetchAll();
+        dataModel = datadao.FetchAll();
 
-        return View("Index", data);
+        return View("Index", dataModel);
+    }
+
+    public IActionResult Details(int output_id)
+    {
+        DataModel dataModel = new DataModel();
+        DataDAO datadao = new DataDAO();
+        dataModel = datadao.FetchOne(output_id);
+        return View("Details", dataModel);
     }
 
     public IActionResult Create()
