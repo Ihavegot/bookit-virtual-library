@@ -5,21 +5,21 @@
     Layout = "~/Views/Shared/_LayoutData.cshtml";
 }
 <div class="text-center">
-    <h2>Lista ksi¹¿ek</h2>
+    <h2>Book list</h2>
 
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.id)
+            Id
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.title)
+            Title
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.author)
+            Author
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.quantity)
+            In stock
         </th>
         <th></th>
     </tr>
@@ -40,9 +40,13 @@
             @Html.DisplayFor(modelItem => item.quantity)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new {Id = item.id}) |
-            @Html.ActionLink("Details", "Details", new {Id = item.id}) |
-            @Html.ActionLink("Delete", "Delete", new {Id = item.id})
+            <button style="border: none; background: none">
+                @Html.ActionLink("", "Edit", new {Id = item.id}, new {@class="fa-solid fa-file-pen fa-xl", @style="color: #198754;"})
+            </button>
+            &nbsp;&nbsp;
+            <button style="border: none; background: none">
+                @Html.ActionLink("", "Delete", new {Id = item.id}, new {@class="fa-solid fa-trash fa-xl", @style="color: #198754;"})
+            </button>
         </td>
     </tr>
 }

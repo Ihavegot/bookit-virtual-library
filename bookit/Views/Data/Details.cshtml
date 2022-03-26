@@ -12,13 +12,13 @@
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.title)
+                Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.author)
+                Author
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.quantity)
+                Quantity
             </th>
             <th></th>
         </tr>
@@ -35,4 +35,7 @@
             <th></th>
         </tr>
     </table>
+    <div class="form-group d-flex justify-content-center mt-3">
+        <a class="btn btn-outline-success me-2" asp-controller="Data" asp-action="Index">Go back to book list</a>
+    </div>
 </div>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/bookit.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" asp-append-version="true" />
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -22,18 +24,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" asp-controller="Data" asp-action="Create">Add book</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" asp-controller="Data" asp-action="Delete">Delete book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" asp-controller="Data" asp-action="Update">Update book</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="flex-shrink-0 bg-light">
+    <main class="flex-shrink-0" style="background-color: #EAF3E2;">
         <div class="d-flex flex-column min-vh-100 align-items-center mt-5">
             @RenderBody()
         </div>

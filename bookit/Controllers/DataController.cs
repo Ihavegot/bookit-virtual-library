@@ -1,7 +1,6 @@
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using bookit.Models;
 using bookit.Data;
+using bookit.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace bookit.Controllers;
 
@@ -29,11 +28,29 @@ public class DataController : Controller
         return View("CreateForm");
     }
 
+    public IActionResult Edit(int id)
+    {
+        DataModel dataModel = new DataModel();
+        DataDAO datadao = new DataDAO();
+        dataModel = datadao.FetchOne(id);
+        return View("EditForm", dataModel);
+    }
+
     public IActionResult ProcessCreate(DataModel createData)
     {
         DataDAO datadao = new DataDAO();
-        datadao.Create(createData);
+        datadao.CreateOrUpdate(createData);
         return View("Details", createData);
+    }
+
+    public IActionResult Delete(int id)
+    {
+        DataDAO datadao = new DataDAO();
+        datadao.Delete(id);
+        List<DataModel> dataModel = new List<DataModel>();
+        dataModel = datadao.FetchAll();
+
+        return View("Index", dataModel);
     }
 
 }

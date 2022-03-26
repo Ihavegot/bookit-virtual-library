@@ -19,12 +19,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxDcmVhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/bookit-virtual-library/bookit/Views/Data/DeleteForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxEZWxldGVGb3JtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Git/bookit-virtual-library/bookit/Views/Data/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/bookit-virtual-library/bookit/Views/Data/EditForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxFZGl0Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git/bookit-virtual-library/bookit/Views/Data/Index.cshtml]

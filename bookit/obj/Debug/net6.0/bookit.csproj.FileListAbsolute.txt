@@ -31,3 +31,4 @@ D:\Git\bookit-virtual-library\bookit\bin\Debug\net6.0\runtimes\win-x86\native\sn
 D:\Git\bookit-virtual-library\bookit\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Git\bookit-virtual-library\bookit\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Git\bookit-virtual-library\bookit\obj\Debug\net6.0\bookit.csproj.CopyComplete
+D:\Git\bookit-virtual-library\bookit\bin\Debug\net6.0\libman.json

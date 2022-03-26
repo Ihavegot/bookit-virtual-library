@@ -5,6 +5,8 @@ namespace bookit.Data
 {
     internal class DataDAO
     {
+
+        // CRUD operations
         private string connectionString = @"Data Source=DESKTOP-GS37F69;Initial Catalog=bookitdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public List<DataModel> FetchAll()
         {
@@ -55,6 +57,7 @@ namespace bookit.Data
                 {
                     while (reader.Read())
                     {
+                        output.id = reader.GetInt32(0);
                         output.title = reader.GetString(1);
                         output.author = reader.GetString(2);
                         output.quantity = reader.GetInt32(3);
@@ -62,19 +65,28 @@ namespace bookit.Data
                 }
 
             }
-            // Console.Write("Test: " + output_id + " " + output.title + " " + output.author + " " + output.quantity + "\n");
 
             return output;
         }
 
-        public int Create(DataModel newData)
+        public int CreateOrUpdate(DataModel newData)
         {
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sqlQuery = "INSERT INTO dbo.book_list VALUES(@title, @author, @quantity)";
+                string sqlQuery = "";
+                if (newData.id <= 0)
+                {
+                    sqlQuery = "INSERT INTO dbo.book_list VALUES(@title, @author, @quantity)";
+                }
+                else
+                {
+                    sqlQuery = "UPDATE dbo.book_list SET title=@title, author=@author, quantity=@quantity WHERE id=@id";
+                }
+
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
 
+                command.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = newData.id;
                 command.Parameters.Add("@title", System.Data.SqlDbType.VarChar, 255).Value = newData.title;
                 command.Parameters.Add("@author", System.Data.SqlDbType.VarChar, 255).Value = newData.author;
                 command.Parameters.Add("@quantity", System.Data.SqlDbType.Int).Value = newData.quantity;
@@ -84,6 +96,22 @@ namespace bookit.Data
                 return newID;
             }
 
+        }
+
+        public int Delete(int id)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
+                string sqlQuery = "DELETE FROM dbo.book_list WHERE id=@id";
+                SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+                command.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
+                
+                connection.Open();
+                int deleteID = command.ExecuteNonQuery();
+                return deleteID;
+            }
         }
 
     }
