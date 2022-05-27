@@ -1,0 +1,41 @@
+﻿@model bkit.Models.DataModel;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>
+    Details
+</h2>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.title)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.author)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.quantity)
+            </td>
+            <th></th>
+        </tr>
+    </table>
+    <div class="form-group d-flex justify-content-center mt-3">
+        <a class="btn btn-outline-success me-2" asp-controller="Admin" asp-action="List">Go back to book list</a>
+    </div>
+</div>

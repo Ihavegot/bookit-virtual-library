@@ -1,0 +1,53 @@
+﻿@model IEnumerable<bkit.Models.DataModel>
+@using Microsoft.AspNetCore.Identity
+@using bkit.Areas.Identity.Data
+@inject UserManager<bkitUser> UserManager
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+    <h2>Book list</h2>
+
+<table class="table">
+    <tr style="border-bottom: 1px solid #198754;">
+        <th>
+            Id
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            In stock
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{  
+    <tr style="border-bottom: 1px solid #198754;">
+        <td>
+            @Html.DisplayFor(modelItem => item.id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.author)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
+        </td>
+        <td>
+            <button style="border: none; background: none">
+                @Html.ActionLink("", "Borrow", new {Book = item.id, User = UserManager.GetUserId(User)}, new {@class="fa-solid fa-arrow-right fa-xl", @style="color: #198754;"})
+            </button>
+        </td>
+    </tr>
+}
+</table>
+</div>
