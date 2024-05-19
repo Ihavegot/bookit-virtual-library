@@ -35,13 +35,13 @@ Password: zaq1@WSX
 ```
 
 #
-> ![Main page](./projectScrShot/mainPage.PNG)*<p align="center">Home page</p>*
+> ![Main page](./virtual_library/bkit/projectScrShot/mainPage.PNG)*<p align="center">Home page</p>*
 
 #
-> ![Main page](./projectScrShot/logregPage.PNG)*<p align="center">Login/Register form</p>*
+> ![Main page](./virtual_library/bkit/projectScrShot/logregPage.PNG)*<p align="center">Login/Register form</p>*
 
 #
-> ![Main page](./projectScrShot/adminList.PNG)*<p align="center">Data listing example</p>*
+> ![Main page](./virtual_library/bkit/projectScrShot/adminList.PNG)*<p align="center">Data listing example</p>*
 
 #
-> ![Main page](./projectScrShot/adminAdd.PNG)*<p align="center">Adding new item example</p>*
+> ![Main page](./virtual_library/bkit/projectScrShot/adminAdd.PNG)*<p align="center">Adding new item example</p>*
